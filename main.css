@@ -20,6 +20,45 @@ body {
   position: relative;
 }
 
+#menu{
+    position: absolute;
+    top: 5%;
+    right:5%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.lyrics{
+    background-color: rgb(225, 221, 221);
+    opacity: 0;
+    visibility: hidden;
+    height: 95vh;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.lyrics.active{
+    opacity: 1;
+    visibility: visible;
+}
+
 h1,
 p {
   margin-bottom: 0.5rem;

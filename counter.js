@@ -4,8 +4,12 @@ const decreaseButton= document.getElementById("decrease")
 const starCountElement= document.getElementById("star-count")
 const body= document.getElementById("body")
 const sound= document.getElementById("sound")
+const menu = document.getElementById("menu");
+const lyrics = document.getElementById("lyrics");
 
-
+menu.addEventListener("click", ()=>{
+    lyrics.classList.toggle("active")
+})
 
 
 let counter=0;
