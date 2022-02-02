@@ -132,10 +132,12 @@ p {
 }
 
 #decrease:disabled {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 #decrease:disabled:hover {
+    background-color: rgb(247, 243, 243);
+    border-color: white;
   cursor: auto;
   transform: scale(1);
   -webkit-transform: scale(1);
